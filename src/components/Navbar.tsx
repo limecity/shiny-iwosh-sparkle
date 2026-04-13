@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-surface">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
         <a href="#" className="flex items-center">
-          <img src={logoImg} alt="i-wosh Logo" className="h-10 md:h-12 w-auto" />
+          <img src={logoImg} alt="i-wosh Logo" className="h-14 md:h-16 w-auto" />
         </a>
 
         {/* Desktop */}
