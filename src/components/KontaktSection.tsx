@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Send, ChevronDown } from "lucide-react";
 
 const KontaktSection = () => {
   const [sent, setSent] = useState(false);
@@ -38,12 +38,15 @@ const KontaktSection = () => {
                 <input required type="text" placeholder="Name" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" />
                 <input required type="email" placeholder="E-Mail" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" />
               </div>
-              <select required className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 appearance-none">
-                <option value="" disabled selected className="text-muted-foreground">Betreff auswählen</option>
-                <option value="problem">Problem</option>
-                <option value="feedback">Feedback</option>
-                <option value="allgemein">Allgemeine Anfrage</option>
-              </select>
+              <div className="relative">
+                <select required defaultValue="" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 pr-10 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 appearance-none">
+                  <option value="" disabled className="text-muted-foreground">Betreff auswählen</option>
+                  <option value="problem">Problem</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="allgemein">Allgemeine Anfrage</option>
+                </select>
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" size={18} />
+              </div>
               <textarea required rows={5} placeholder="Nachricht" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" />
               <button type="submit" className="w-full bg-primary text-primary-foreground py-3.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Nachricht senden
