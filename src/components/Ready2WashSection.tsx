@@ -1,5 +1,6 @@
 import { Smartphone, CreditCard, Zap, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import ready2washImg from "@/assets/logo-icon.png";
 
 const benefits = [
   { icon: Smartphone, text: "Digitale Token jederzeit kaufen" },
@@ -44,12 +45,8 @@ const Ready2WashSection = () => (
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="w-64 h-[460px] rounded-[2.5rem] bg-gradient-to-b from-card to-accent border-2 border-border flex items-center justify-center">
-            <div className="text-center px-6">
-              <Smartphone className="text-primary mx-auto mb-4" size={48} />
-              <p className="font-display font-bold text-lg mb-1">Ready2Wash</p>
-              <p className="text-muted-foreground text-xs">Deine digitale Waschkarte</p>
-            </div>
+          <div className="w-64 h-[460px] rounded-[2.5rem] bg-gradient-to-b from-card to-accent border-2 border-border flex items-center justify-center overflow-hidden p-6">
+            <img src={ready2washImg} alt="Ready2Wash App" className="w-full h-full object-contain" />
           </div>
         </motion.div>
       </div>
