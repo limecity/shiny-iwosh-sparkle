@@ -45,9 +45,7 @@ const Ready2WashSection = () => (
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="w-64 h-[460px] rounded-[2.5rem] bg-gradient-to-b from-card to-accent border-2 border-border flex items-center justify-center overflow-hidden p-6">
-            <img src={ready2washImg} alt="Ready2Wash App" className="w-full h-full object-contain" />
-          </div>
+          <img src={ready2washImg} alt="Ready2Wash App" className="w-80 md:w-96 h-auto object-contain" />
         </motion.div>
       </div>
     </div>
