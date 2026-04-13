@@ -38,7 +38,12 @@ const KontaktSection = () => {
                 <input required type="text" placeholder="Name" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" />
                 <input required type="email" placeholder="E-Mail" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" />
               </div>
-              <input required type="text" placeholder="Betreff" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              <select required className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 appearance-none">
+                <option value="" disabled selected className="text-muted-foreground">Betreff auswählen</option>
+                <option value="problem">Problem</option>
+                <option value="feedback">Feedback</option>
+                <option value="allgemein">Allgemeine Anfrage</option>
+              </select>
               <textarea required rows={5} placeholder="Nachricht" className="w-full bg-accent/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" />
               <button type="submit" className="w-full bg-primary text-primary-foreground py-3.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Nachricht senden
