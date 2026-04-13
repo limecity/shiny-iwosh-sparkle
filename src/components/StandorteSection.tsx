@@ -1,5 +1,8 @@
 import { MapPin, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import imgSchwarzenbach from "@/assets/standort-schwarzenbach.png";
+import imgHof from "@/assets/standort-hof.jpeg";
+import imgHelmbrechts from "@/assets/standort-helmbrechts.jpeg";
 
 const locations = [
   {
@@ -7,18 +10,21 @@ const locations = [
     address: "Am Alten Gericht 2",
     zip: "95131 Schwarzenbach am Wald",
     maps: "https://www.google.com/maps/place/i-wosh/@50.2897447,11.6275839,17z",
+    image: imgSchwarzenbach,
   },
   {
     name: "Hof",
     address: "Fuhrmannstraße 1",
     zip: "95030 Hof",
     maps: "https://www.google.com/maps/place/i-wosh/@50.3107146,11.8778227,17z",
+    image: imgHof,
   },
   {
     name: "Helmbrechts",
     address: "Frankenstraße 12",
     zip: "95233 Helmbrechts",
     maps: "https://www.google.com/maps/place/i-wosh/@50.2395084,11.72178,16z",
+    image: imgHelmbrechts,
   },
 ];
 
@@ -38,22 +44,28 @@ const StandorteSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="glass-surface rounded-xl p-8 hover:border-primary/40 transition-colors group"
+            className="glass-surface rounded-xl overflow-hidden hover:border-primary/40 transition-colors group"
           >
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
-              <MapPin className="text-primary" size={22} />
+            <div className="w-full h-48 overflow-hidden">
+              <img
+                src={loc.image}
+                alt={`i-wosh Standort ${loc.name}`}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-            <h3 className="font-display text-xl font-semibold mb-2">{loc.name}</h3>
-            <p className="text-muted-foreground text-sm mb-1">{loc.address}</p>
-            <p className="text-muted-foreground text-sm mb-5">{loc.zip}</p>
-            <a
-              href={loc.maps}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
-            >
-              Route planen <ExternalLink size={14} />
-            </a>
+            <div className="p-8">
+              <h3 className="font-display text-xl font-semibold mb-2">{loc.name}</h3>
+              <p className="text-muted-foreground text-sm mb-1">{loc.address}</p>
+              <p className="text-muted-foreground text-sm mb-5">{loc.zip}</p>
+              <a
+                href={loc.maps}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
+              >
+                Route planen <ExternalLink size={14} />
+              </a>
+            </div>
           </motion.div>
         ))}
       </div>

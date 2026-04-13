@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo-iwosh.png";
 
 const navLinks = [
   { label: "Standorte", href: "#standorte" },
@@ -15,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-surface">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <a href="#" className="font-display text-2xl font-bold tracking-tight">
-          <span className="text-gradient">i-wosh</span>
+        <a href="#" className="flex items-center">
+          <img src={logoImg} alt="i-wosh Logo" className="h-10 md:h-12 w-auto" />
         </a>
 
         {/* Desktop */}
