@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-carwash.jpg";
+import logoIcon from "@/assets/logo-icon.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -9,14 +10,14 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
     <div className="relative z-10 container mx-auto px-4 text-center pt-20">
-      <motion.p
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-primary font-medium tracking-widest uppercase text-sm mb-6"
+        className="flex justify-center mb-6"
       >
-        Moderne SB-Waschanlagen
-      </motion.p>
+        <img src={logoIcon} alt="i-wosh" className="h-16 md:h-20 w-auto" />
+      </motion.div>
 
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
