@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Dog } from "lucide-react";
-import wauImg from "@/assets/wau-wash.jpg";
+import { Dog, ImageIcon } from "lucide-react";
 
 const WauWashSection = () => (
   <section id="wau-wash" className="section-padding">
@@ -29,8 +28,9 @@ const WauWashSection = () => (
           viewport={{ once: true }}
           className="order-1 md:order-2"
         >
-          <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
-            <img src={wauImg} alt="Wau Wash – Hundewaschplatz" className="w-full h-full object-cover" />
+          <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-muted/40 border border-border flex flex-col items-center justify-center gap-2 text-muted-foreground">
+            <ImageIcon size={32} strokeWidth={1.5} />
+            <span className="text-sm tracking-wide">Bild folgt</span>
           </div>
         </motion.div>
       </div>
