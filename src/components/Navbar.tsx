@@ -6,6 +6,8 @@ const navLinks = [
   { label: "Standorte", href: "#standorte" },
   { label: "Programme", href: "#programme" },
   { label: "Ready2Wash", href: "#ready2wash" },
+  { label: "Wau Wash", href: "#wau-wash" },
+  { label: "Video", href: "#video" },
   { label: "FAQ", href: "#faq" },
   { label: "Kontakt", href: "#kontakt" },
 ];
