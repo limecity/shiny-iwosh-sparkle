@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const groups = [
   {
-    title: "🔥 Allgemein",
+    title: "Allgemein",
     items: [
       { q: "Was bietet ihr genau an?", a: "Wir bieten moderne Selbstbedienungs-Waschanlagen in Schwarzenbach, Helmbrechts und Hof. Das bedeutet: Du kannst dein Auto selbst reinigen – günstig, lackschonend und mit richtig viel Spaß. Probier es einfach aus!" },
       { q: "Für wen ist euer Angebot geeignet?", a: "Für alle, die ein Auto haben. Unsere Anlagen sind einfach zu bedienen, liefern perfekte Ergebnisse und stehen dir jederzeit zur Verfügung." },
@@ -12,7 +12,7 @@ const groups = [
     ],
   },
   {
-    title: "💰 Preise",
+    title: "Preise",
     items: [
       { q: "Was kostet eure Dienstleistung?", a: "Das bestimmst du selbst. Je nachdem, wie viel Zeit du dir nimmst. Eine kurze Wäsche kostet in der Regel zwischen 2 € und 5 €." },
       { q: "Gibt es versteckte Kosten?", a: "Nein. Es gibt keine versteckten Kosten. Du zahlst nur das, was du tatsächlich einwirfst – keinen Cent mehr." },
@@ -20,7 +20,7 @@ const groups = [
     ],
   },
   {
-    title: "⏱️ Ablauf & Organisation",
+    title: "Ablauf & Organisation",
     items: [
       { q: "Wie kurzfristig kann ich starten?", a: "Du brauchst keinen Termin. Du kannst dein Auto jederzeit zwischen 08:00 und 22:00 Uhr waschen." },
       { q: "Wie lange dauert eine Wäsche?", a: "Das entscheidest du selbst. Ob schnelle Reinigung oder gründliche Pflege – alles ist möglich." },
@@ -28,20 +28,20 @@ const groups = [
     ],
   },
   {
-    title: "📍 Standort & Verfügbarkeit",
+    title: "Standort & Verfügbarkeit",
     items: [
       { q: "Wo seid ihr tätig?", a: "Du findest unsere Anlagen in: Hof, Schwarzenbach, Helmbrechts." },
     ],
   },
   {
-    title: "💬 Kontakt & Support",
+    title: "Kontakt & Support",
     items: [
       { q: "Wie kann ich euch erreichen?", a: "Du erreichst uns jederzeit über unsere Notfallnummer oder das Kontaktformular auf der Website." },
       { q: "Wie schnell antwortet ihr?", a: "Wir sind täglich von 08:00 bis 22:00 Uhr erreichbar. Wenn es ein Problem gibt, sind wir direkt für dich da." },
     ],
   },
   {
-    title: "🧠 Bonus",
+    title: "Bonus",
     items: [
       { q: "Muss ich einen Termin machen oder geht das spontan?", a: "Du kannst jederzeit spontan vorbeikommen – ganz ohne Termin." },
       { q: "Welche Zahlungsmethoden akzeptiert ihr?", a: "Wir akzeptieren: Münzen (1 € und 2 €), Scheine (5 €, 10 €, 20 €, 50 €), Kartenzahlung, Ready2Wash App." },
