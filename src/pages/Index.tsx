@@ -4,6 +4,8 @@ import StandorteSection from "@/components/StandorteSection";
 import ProgrammeSection from "@/components/ProgrammeSection";
 import StaubsaugerSection from "@/components/StaubsaugerSection";
 import Ready2WashSection from "@/components/Ready2WashSection";
+import WauWashSection from "@/components/WauWashSection";
+import VideoSection from "@/components/VideoSection";
 import ReviewCTA from "@/components/ReviewCTA";
 import KontaktSection from "@/components/KontaktSection";
 import FAQSection from "@/components/FAQSection";
@@ -17,6 +19,8 @@ const Index = () => (
     <ProgrammeSection />
     <StaubsaugerSection />
     <Ready2WashSection />
+    <WauWashSection />
+    <VideoSection />
     <ReviewCTA />
     <FAQSection />
     <KontaktSection />
