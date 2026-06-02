@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Dog } from "lucide-react";
-import wauImg from "@/assets/wau-wash.jpg";
+import wauImg from "@/assets/wau-wash.png.asset.json";
 
 const WauWashSection = () => (
   <section id="wau-wash" className="section-padding">
@@ -19,7 +19,10 @@ const WauWashSection = () => (
             Der Waschplatz für deinen Hund
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            [Beschreibung folgt]
+            Bei uns kann auch dein vierbeiniger Begleiter sauber werden. Unsere Wau-Wash-Station
+            bietet eine komfortable, rückenschonende Wanne mit warmem Wasser, schonendem Shampoo
+            und einem leistungsstarken Föhn – alles, was du für ein gründliches und stressfreies
+            Hundebad brauchst. Schnell, hygienisch und tierfreundlich.
           </p>
         </motion.div>
 
@@ -30,7 +33,7 @@ const WauWashSection = () => (
           className="order-1 md:order-2"
         >
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
-            <img src={wauImg} alt="Wau Wash – Hundewaschplatz" className="w-full h-full object-cover" />
+            <img src={wauImg.url} alt="Wau Wash – Hundewaschplatz" className="w-full h-full object-cover" />
           </div>
         </motion.div>
       </div>
