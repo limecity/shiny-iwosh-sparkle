@@ -8,6 +8,11 @@ import wauCarousel4 from "@/assets/wau-wosh-carousel-4.png.asset.json";
 import wauCarousel5 from "@/assets/wau-wosh-carousel-5.png.asset.json";
 import wauCarousel6 from "@/assets/wau-wosh-carousel-6.png.asset.json";
 import wauCarousel7 from "@/assets/wau-wosh-carousel-7.png.asset.json";
+import wauCarousel9 from "@/assets/wau-wosh-carousel-9.png.asset.json";
+import wauCarousel10 from "@/assets/wau-wosh-carousel-10.png.asset.json";
+import wauCarousel11 from "@/assets/wau-wosh-carousel-11.png.asset.json";
+import wauCarousel12 from "@/assets/wau-wosh-carousel-12.png.asset.json";
+import wauCarousel13 from "@/assets/wau-wosh-carousel-13.png.asset.json";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const features = [
