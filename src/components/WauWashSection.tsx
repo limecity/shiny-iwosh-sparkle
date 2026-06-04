@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2 } from "lucide-react";
+import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2, Clock } from "lucide-react";
 import wauImg from "@/assets/wau-wash.png.asset.json";
 
 const features = [
