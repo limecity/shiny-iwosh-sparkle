@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2, Clock } from "lucide-react";
 import wauImg from "@/assets/wau-wash.png.asset.json";
+import wauCarousel1 from "@/assets/wau-wosh-carousel-1.png.asset.json";
+import wauCarousel2 from "@/assets/wau-wosh-carousel-2.png.asset.json";
+import wauCarousel3 from "@/assets/wau-wosh-carousel-3.png.asset.json";
+import wauCarousel4 from "@/assets/wau-wosh-carousel-4.png.asset.json";
+import wauCarousel5 from "@/assets/wau-wosh-carousel-5.png.asset.json";
+import wauCarousel6 from "@/assets/wau-wosh-carousel-6.png.asset.json";
+import wauCarousel7 from "@/assets/wau-wosh-carousel-7.png.asset.json";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const features = [
   { icon: Droplets, title: "Warmes Wasser", desc: "Angenehme Wassertemperatur für eine stressfreie Reinigung." },
@@ -17,10 +25,19 @@ const bullets = [
   "Einfacher Ablauf: Hund in die Wanne führen, Programm wählen, waschen, spülen und trocknen.",
 ];
 
+const galleryImages = [
+  { src: wauCarousel1.url, alt: "Wau-Wosh Außenansicht mit mehreren Waschboxen" },
+  { src: wauCarousel2.url, alt: "Wau-Wosh Seitenansicht mit beleuchteten Anzeigen" },
+  { src: wauCarousel3.url, alt: "Innenansicht der Wau-Wosh Hundewaschanlage" },
+  { src: wauCarousel4.url, alt: "i-Wosh und Wau-Wosh Waschplätze von außen" },
+  { src: wauCarousel5.url, alt: "Staubsaugerplätze auf dem Gelände" },
+  { src: wauCarousel6.url, alt: "Waschboxen mit Fahnen und Öffnungszeiten" },
+  { src: wauCarousel7.url, alt: "Geldwechsler und Zahlungsautomat vor Ort" },
+];
+
 const WauWashSection = () => (
   <section id="wau-wash" className="section-padding" style={{ ["--primary" as never]: "190 55% 55%" }}>
     <div className="container mx-auto">
-      {/* Header row: text + image */}
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -67,7 +84,6 @@ const WauWashSection = () => (
         </motion.div>
       </div>
 
-      {/* Feature grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16 max-w-6xl mx-auto">
         {features.map((f, i) => (
           <motion.div
@@ -87,7 +103,6 @@ const WauWashSection = () => (
         ))}
       </div>
 
-      {/* Bullets */}
       <div className="grid md:grid-cols-2 gap-4 mt-6 max-w-6xl mx-auto">
         {bullets.map((b) => (
           <div
@@ -99,6 +114,44 @@ const WauWashSection = () => (
           </div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-10 max-w-6xl mx-auto"
+      >
+        <div className="flex items-end justify-between gap-4 mb-5">
+          <div>
+            <p className="text-primary font-medium tracking-widest uppercase text-sm mb-2">Einblicke vor Ort</p>
+            <h3 className="font-display text-2xl md:text-3xl font-bold">Wau-Wosh Galerie</h3>
+          </div>
+        </div>
+
+        <Carousel
+          opts={{ loop: true, align: "start" }}
+          className="px-0 md:px-12"
+        >
+          <CarouselContent className="-ml-3">
+            {galleryImages.map((image, index) => (
+              <CarouselItem key={image.src} className="pl-3 basis-full md:basis-1/2 xl:basis-1/3">
+                <div className="glass-surface overflow-hidden rounded-xl border border-primary/15 h-full">
+                  <div className="aspect-[4/3] overflow-hidden bg-muted/20">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover"
+                      loading={index < 2 ? "eager" : "lazy"}
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-2 border-primary/25 bg-background/85 text-primary hover:bg-background" />
+          <CarouselNext className="right-2 border-primary/25 bg-background/85 text-primary hover:bg-background" />
+        </Carousel>
+      </motion.div>
     </div>
   </section>
 );
