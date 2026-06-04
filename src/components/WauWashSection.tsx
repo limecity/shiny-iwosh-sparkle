@@ -38,6 +38,11 @@ const galleryImages = [
   { src: wauCarousel5.url, alt: "Staubsaugerplätze auf dem Gelände" },
   { src: wauCarousel6.url, alt: "Waschboxen mit Fahnen und Öffnungszeiten" },
   { src: wauCarousel7.url, alt: "Geldwechsler und Zahlungsautomat vor Ort" },
+  { src: wauCarousel9.url, alt: "Waschplatz mit Tesla Model S beim Waschen" },
+  { src: wauCarousel10.url, alt: "i-Wosh Waschanlage Außenansicht mit Logo" },
+  { src: wauCarousel11.url, alt: "Ready2Wash Zahlungsterminal in Detailansicht" },
+  { src: wauCarousel12.url, alt: "Hochleistungssauger Station im Winter" },
+  { src: wauCarousel13.url, alt: "Audi mit Schaum bei der Handwäsche" },
 ];
 
 const WauWashSection = () => (
