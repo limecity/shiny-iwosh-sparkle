@@ -130,11 +130,12 @@ const WauWashSection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mt-10 max-w-6xl mx-auto"
+        style={{ ["--primary" as never]: "0 80% 55%" }}
       >
         <div className="flex items-end justify-between gap-4 mb-5">
           <div>
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-2">Einblicke vor Ort</p>
-            <h3 className="font-display text-2xl md:text-3xl font-bold">Wau-Wosh Galerie</h3>
+            <h3 className="font-display text-2xl md:text-3xl font-bold">iWosh Galerie</h3>
           </div>
         </div>
 
