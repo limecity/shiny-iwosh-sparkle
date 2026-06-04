@@ -18,7 +18,7 @@ const bullets = [
 ];
 
 const WauWashSection = () => (
-  <section id="wau-wash" className="section-padding">
+  <section id="wau-wash" className="section-padding" style={{ ["--primary" as never]: "189 41% 38%" }}>
     <div className="container mx-auto">
       {/* Header row: text + image */}
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
