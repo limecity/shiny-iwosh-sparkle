@@ -49,9 +49,6 @@ const WauWashSection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-center text-primary font-medium tracking-widest uppercase text-sm mb-4">
-            So funktioniert's
-          </p>
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
             <img
               src={wauImg.url}
