@@ -42,6 +42,13 @@ const WauWashSection = () => (
             Programme sind speziell auf Fell und Haut abgestimmt und sorgen für eine gründliche
             und gleichzeitig schonende Reinigung.
           </p>
+          <div className="mt-6 inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
+            <Clock className="text-primary shrink-0" size={20} />
+            <div>
+              <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
+              <p className="text-sm text-foreground/90">Täglich von 6:00 Uhr bis 22:00 Uhr</p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
