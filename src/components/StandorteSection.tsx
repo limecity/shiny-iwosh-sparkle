@@ -1,30 +1,30 @@
 import { MapPin, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import imgSchwarzenbach from "@/assets/standort-schwarzenbach.png";
-import imgHof from "@/assets/standort-hof.jpeg";
-import imgHelmbrechts from "@/assets/standort-helmbrechts.jpeg";
+import imgSchwarzenbach from "@/assets/standort-schwarzenbach-new.asset.json";
+import imgHof from "@/assets/standort-hof-new.asset.json";
+import imgHelmbrechts from "@/assets/standort-helmbrechts-new.asset.json";
 
 const locations = [
   {
-    name: "Schwarzenbach",
+    name: "Schwarzenbach am Wald",
     address: "Am Alten Gericht 2",
     zip: "95131 Schwarzenbach am Wald",
     maps: "https://www.google.com/maps/place/i-wosh/@50.2897447,11.6275839,17z",
-    image: imgSchwarzenbach,
+    image: imgSchwarzenbach.url,
   },
   {
     name: "Hof",
     address: "Fuhrmannstraße 1",
     zip: "95030 Hof",
     maps: "https://www.google.com/maps/place/i-wosh/@50.3107146,11.8778227,17z",
-    image: imgHof,
+    image: imgHof.url,
   },
   {
     name: "Helmbrechts",
     address: "Frankenstraße 12",
     zip: "95233 Helmbrechts",
     maps: "https://www.google.com/maps/place/i-wosh/@50.2395084,11.72178,16z",
-    image: imgHelmbrechts,
+    image: imgHelmbrechts.url,
   },
 ];
 
