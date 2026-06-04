@@ -1,6 +1,6 @@
 import { MapPin, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import imgSchwarzenbach from "@/assets/standort-schwarzenbach-new.asset.json";
+import imgSchwarzenbach from "@/assets/standort-schwarzenbach-v2.asset.json";
 import imgHof from "@/assets/standort-hof-new.asset.json";
 import imgHelmbrechts from "@/assets/standort-helmbrechts-new.asset.json";
 
