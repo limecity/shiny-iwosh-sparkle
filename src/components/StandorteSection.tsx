@@ -9,7 +9,7 @@ const locations = [
     name: "Schwarzenbach am Wald",
     address: "Am Alten Gericht 2",
     zip: "95131 Schwarzenbach am Wald",
-    maps: "https://www.google.com/maps/place/i-wosh/@50.2897447,11.6275839,17z",
+    maps: "https://www.google.de/maps/place/Am+Alten+Gericht+2,+95131+Schwarzenbach+am+Wald,+Tyskland/@50.2897276,11.6276459,17z/data=!3m1!4b1!4m6!3m5!1s0x47a16d096a794495:0x94d93acb782397bf!8m2!3d50.2897276!4d11.6302208!16s%2Fg%2F11k6y9wzb4?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
     image: imgSchwarzenbach.url,
   },
   {
