@@ -64,15 +64,6 @@ const WauWashSection = () => (
             Programme sind speziell auf Fell und Haut abgestimmt und sorgen für eine gründliche
             und gleichzeitig schonende Reinigung.
           </p>
-          <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-5">
-            <div className="inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
-              <Clock className="text-primary shrink-0" size={20} />
-              <div>
-                <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
-                <p className="text-sm text-foreground/90">Täglich von 6:00 Uhr bis 22:00 Uhr</p>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -81,12 +72,6 @@ const WauWashSection = () => (
           viewport={{ once: true }}
           className="flex flex-col"
         >
-          <img
-            src={wauLogo.url}
-            alt="Wau-Wosh Logo"
-            className="max-w-[170px] md:max-w-[210px] ml-auto mb-4"
-            loading="eager"
-          />
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
             <img
               src={wauImg.url}
@@ -95,6 +80,27 @@ const WauWashSection = () => (
               loading="lazy"
             />
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="lg:col-span-2 -mt-4 flex items-center justify-between gap-6"
+        >
+          <div className="inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
+            <Clock className="text-primary shrink-0" size={20} />
+            <div>
+              <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
+              <p className="text-sm text-foreground/90">Täglich von 6:00 Uhr bis 22:00 Uhr</p>
+            </div>
+          </div>
+          <img
+            src={wauLogo.url}
+            alt="Wau-Wosh Logo"
+            className="w-[170px] md:w-[210px] shrink-0"
+            loading="eager"
+          />
         </motion.div>
       </div>
 
