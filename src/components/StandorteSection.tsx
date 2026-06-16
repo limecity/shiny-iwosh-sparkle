@@ -23,7 +23,7 @@ const locations = [
     name: "Helmbrechts",
     address: "Frankenstraße 12",
     zip: "95233 Helmbrechts",
-    maps: "https://www.google.com/maps/place/i-wosh/@50.2395084,11.72178,16z",
+    maps: "https://www.google.de/maps/place/Frankenstra%C3%9Fe+12,+95233+Helmbrechts,+Tyskland/@50.2395325,11.721853,17z/data=!3m1!4b1!4m6!3m5!1s0x47a10d9b9c7f7f25:0xef09b55df37621fa!8m2!3d50.2395325!4d11.7244279!16s%2Fg%2F11c5kpx2mq?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
     image: imgHelmbrechts.url,
   },
 ];
