@@ -16,7 +16,7 @@ const locations = [
     name: "Hof",
     address: "Fuhrmannstraße 1",
     zip: "95030 Hof",
-    maps: "https://www.google.com/maps/place/i-wosh/@50.3107146,11.8778227,17z",
+    maps: "https://www.google.de/maps/place/Fuhrmannstra%C3%9Fe+1,+95030+Hof,+Tyskland/@50.3105959,11.8778367,17z/data=!3m1!4b1!4m6!3m5!1s0x47a110c58a072433:0xd3e6cb04cfab9222!8m2!3d50.3105959!4d11.8804116!16s%2Fg%2F11nnqbmk3t?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
     image: imgHof.url,
   },
   {
