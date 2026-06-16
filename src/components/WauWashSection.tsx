@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2, Clock } from "lucide-react";
 import wauImg from "@/assets/wau-wash.png.asset.json";
-import wauLogo from "@/assets/wau-wosh-logo.png";
+import wauLogo from "@/assets/wau-wosh-logo.png.asset.json";
 import wauCarousel1 from "@/assets/wau-wosh-carousel-1.png.asset.json";
 import wauCarousel2 from "@/assets/wau-wosh-carousel-2.png.asset.json";
 import wauCarousel4 from "@/assets/wau-wosh-carousel-4.png.asset.json";
@@ -81,7 +81,7 @@ const WauWashSection = () => (
               </div>
             </div>
             <img
-              src={wauLogo}
+              src={wauLogo.url}
               alt="Wau-Wosh Logo"
               className="w-[170px] md:w-[210px] shrink-0"
               loading="eager"
