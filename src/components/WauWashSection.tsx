@@ -79,7 +79,14 @@ const WauWashSection = () => (
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          className="flex flex-col"
         >
+          <img
+            src={wauLogo.url}
+            alt="Wau-Wosh Logo"
+            className="max-w-[170px] md:max-w-[210px] ml-auto mb-4"
+            loading="eager"
+          />
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
             <img
               src={wauImg.url}
