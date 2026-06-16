@@ -3,16 +3,13 @@ import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2, Clo
 import wauImg from "@/assets/wau-wash.png.asset.json";
 import wauCarousel1 from "@/assets/wau-wosh-carousel-1.png.asset.json";
 import wauCarousel2 from "@/assets/wau-wosh-carousel-2.png.asset.json";
-import wauCarousel3 from "@/assets/wau-wosh-carousel-3.png.asset.json";
 import wauCarousel4 from "@/assets/wau-wosh-carousel-4.png.asset.json";
 import wauCarousel5 from "@/assets/wau-wosh-carousel-5.png.asset.json";
 import wauCarousel6 from "@/assets/wau-wosh-carousel-6.png.asset.json";
-import wauCarousel7 from "@/assets/wau-wosh-carousel-7.png.asset.json";
 import wauCarousel9 from "@/assets/wau-wosh-carousel-9.png.asset.json";
 import wauCarousel10 from "@/assets/wau-wosh-carousel-10.png.asset.json";
 import wauCarousel11 from "@/assets/wau-wosh-carousel-11.png.asset.json";
 import wauCarousel12 from "@/assets/wau-wosh-carousel-12.png.asset.json";
-import wauCarousel13 from "@/assets/wau-wosh-carousel-13.png.asset.json";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const features = [
@@ -33,16 +30,13 @@ const bullets = [
 const galleryImages = [
   { src: wauCarousel1.url, alt: "Wau-Wosh Außenansicht mit mehreren Waschboxen" },
   { src: wauCarousel2.url, alt: "Wau-Wosh Seitenansicht mit beleuchteten Anzeigen" },
-  { src: wauCarousel3.url, alt: "Innenansicht der Wau-Wosh Hundewaschanlage" },
   { src: wauCarousel4.url, alt: "i-Wosh und Wau-Wosh Waschplätze von außen" },
   { src: wauCarousel5.url, alt: "Staubsaugerplätze auf dem Gelände" },
   { src: wauCarousel6.url, alt: "Waschboxen mit Fahnen und Öffnungszeiten" },
-  { src: wauCarousel7.url, alt: "Geldwechsler und Zahlungsautomat vor Ort" },
   { src: wauCarousel9.url, alt: "Waschplatz mit Tesla Model S beim Waschen" },
   { src: wauCarousel10.url, alt: "i-Wosh Waschanlage Außenansicht mit Logo" },
   { src: wauCarousel11.url, alt: "Ready2Wash Zahlungsterminal in Detailansicht" },
   { src: wauCarousel12.url, alt: "Hochleistungssauger Station im Winter" },
-  { src: wauCarousel13.url, alt: "Audi mit Schaum bei der Handwäsche" },
 ];
 
 const WauWashSection = () => (
