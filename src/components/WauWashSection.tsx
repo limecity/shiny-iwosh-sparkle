@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Dog, Droplets, Sparkles, Wind, Shield, Bug, SprayCan, CheckCircle2, Clock } from "lucide-react";
 import wauImg from "@/assets/wau-wash.png.asset.json";
+import wauLogo from "@/assets/wau-wosh-logo.png.asset.json";
 import wauCarousel1 from "@/assets/wau-wosh-carousel-1.png.asset.json";
 import wauCarousel2 from "@/assets/wau-wosh-carousel-2.png.asset.json";
 import wauCarousel4 from "@/assets/wau-wosh-carousel-4.png.asset.json";
@@ -51,6 +52,12 @@ const WauWashSection = () => (
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3 flex items-center gap-2">
             <Dog size={16} /> Wau-Wosh – Das SB-Wascherlebnis für deinen Hund
           </p>
+          <img
+            src={wauLogo.url}
+            alt="Wau-Wosh Logo"
+            className="max-w-[220px] md:max-w-[280px] mb-5"
+            loading="eager"
+          />
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-5 leading-tight">
             Sauber. Schonend. Stressfrei.
           </h2>
