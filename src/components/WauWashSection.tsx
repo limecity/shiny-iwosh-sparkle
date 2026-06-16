@@ -52,6 +52,12 @@ const WauWashSection = () => (
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3 flex items-center gap-2">
             <Dog size={16} /> Wau-Wosh – Das SB-Wascherlebnis für deinen Hund
           </p>
+          <img
+            src={wauLogo.url}
+            alt="Wau-Wosh Logo"
+            className="max-w-[220px] md:max-w-[280px] mb-5"
+            loading="eager"
+          />
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-5 leading-tight">
             Sauber. Schonend. Stressfrei.
           </h2>
