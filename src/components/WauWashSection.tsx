@@ -83,7 +83,7 @@ const WauWashSection = () => (
             <img
               src={wauLogo.url}
               alt="Wau-Wosh Logo"
-              className="w-[170px] md:w-[210px] shrink-0"
+              className="w-[220px] md:w-[280px] shrink-0"
               loading="eager"
             />
           </div>
