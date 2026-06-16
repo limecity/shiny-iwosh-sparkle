@@ -43,7 +43,7 @@ const galleryImages = [
 const WauWashSection = () => (
   <section id="wau-wash" className="section-padding pt-10 md:pt-14 pb-12 md:pb-16" style={{ ["--primary" as never]: "190 55% 55%" }}>
     <div className="container mx-auto">
-      <div className="grid lg:grid-cols-2 gap-12 items-end max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -64,12 +64,20 @@ const WauWashSection = () => (
             Programme sind speziell auf Fell und Haut abgestimmt und sorgen für eine gründliche
             und gleichzeitig schonende Reinigung.
           </p>
-          <div className="mt-6 inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
-            <Clock className="text-primary shrink-0" size={20} />
-            <div>
-              <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
-              <p className="text-sm text-foreground/90">Täglich von 6:00 Uhr bis 22:00 Uhr</p>
+          <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-5">
+            <div className="inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
+              <Clock className="text-primary shrink-0" size={20} />
+              <div>
+                <p className="text-sm font-semibold text-primary">Öffnungszeiten</p>
+                <p className="text-sm text-foreground/90">Täglich von 6:00 Uhr bis 22:00 Uhr</p>
+              </div>
             </div>
+            <img
+              src={wauLogo.url}
+              alt="Wau-Wosh Logo"
+              className="max-w-[170px] md:max-w-[210px]"
+              loading="eager"
+            />
           </div>
         </motion.div>
 
@@ -77,7 +85,6 @@ const WauWashSection = () => (
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col gap-6"
         >
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
             <img
@@ -87,12 +94,6 @@ const WauWashSection = () => (
               loading="lazy"
             />
           </div>
-          <img
-            src={wauLogo.url}
-            alt="Wau-Wosh Logo"
-            className="max-w-[200px] md:max-w-[260px] self-end"
-            loading="eager"
-          />
         </motion.div>
       </div>
 
