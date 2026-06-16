@@ -86,7 +86,7 @@ const WauWashSection = () => (
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="lg:col-span-2 -mt-4 flex items-center justify-between gap-6"
+          className="lg:col-span-2 -mt-4 flex items-start justify-between gap-6"
         >
           <div className="inline-flex items-center gap-3 glass-surface rounded-xl px-5 py-3 border border-primary/20">
             <Clock className="text-primary shrink-0" size={20} />
@@ -98,7 +98,7 @@ const WauWashSection = () => (
           <img
             src={wauLogo.url}
             alt="Wau-Wosh Logo"
-            className="w-[170px] md:w-[210px] shrink-0"
+            className="w-[170px] md:w-[210px] shrink-0 -mt-5"
             loading="eager"
           />
         </motion.div>
