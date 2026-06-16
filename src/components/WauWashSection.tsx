@@ -43,7 +43,7 @@ const galleryImages = [
 const WauWashSection = () => (
   <section id="wau-wash" className="section-padding pt-10 md:pt-14 pb-12 md:pb-16" style={{ ["--primary" as never]: "190 55% 55%" }}>
     <div className="container mx-auto">
-      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
