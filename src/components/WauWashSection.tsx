@@ -49,12 +49,6 @@ const WauWashSection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <img
-            src={wauLogo.url}
-            alt="Wau-Wosh Logo"
-            className="max-w-[220px] md:max-w-[280px] mb-4"
-            loading="eager"
-          />
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3 flex items-center gap-2">
             <Dog size={16} /> Wau-Wosh – Das SB-Wascherlebnis für deinen Hund
           </p>
@@ -83,7 +77,14 @@ const WauWashSection = () => (
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          className="flex flex-col gap-6"
         >
+          <img
+            src={wauLogo.url}
+            alt="Wau-Wosh Logo"
+            className="max-w-[200px] md:max-w-[260px] self-end"
+            loading="eager"
+          />
           <div className="glass-surface rounded-2xl overflow-hidden aspect-[4/3]">
             <img
               src={wauImg.url}
